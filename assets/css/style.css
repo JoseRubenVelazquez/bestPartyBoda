@@ -584,6 +584,6 @@ footer{
   margin-top: 30px;
 }
   .card:hover .imgBox{
-  transform:rotateY(-100deg)
+  transform:rotateY(-105deg)
 }
 }
