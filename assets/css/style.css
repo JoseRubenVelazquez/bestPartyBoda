@@ -139,6 +139,10 @@ h3{
   padding:20px;
   z-index:-1;
 }
+.card .details h3{
+  font-size: 30px;
+  font-weight: bold;
+}
 /*Papas Novio*/
 .papasNovio {
   width: 250px;
@@ -239,6 +243,9 @@ h3{
   transform: translateY(-50%);
   padding: 20px 0 20px 20px;
 }
+.snip1482 h3{
+  font-size: 35px;
+}
 .snip1482 h2,
 .snip1482 p {
   margin: 0;
@@ -253,6 +260,8 @@ h3{
 }
 .snip1482 p {
   font-size: 0.8em;
+  font-weight: bold;
+  font-size: 50px;
 }
 .snip1482 a {
   position: absolute;
@@ -528,7 +537,7 @@ footer{
 /*responsive*/
 @media(min-width: 320px) and (max-width: 650px){
   .card{
-    width: 250px;
+    width: 200px;
   }
 
   h1{
@@ -538,13 +547,16 @@ footer{
     font-size: 20px;
   }
   p{
-    font-size: 18px;
+    font-size: 20px;
+  }
+  .faltan{
+    font-size: 30px;
   }
   .names{
     font-size: 40px;
   }
   /*Temporizador*/
-.timer{
+  .timer{
   display: inline-block;
   padding: 50px;
   color: #000;
@@ -555,7 +567,7 @@ footer{
   height: 100px;
   margin-top: -30px;
 }
-.countdown div{
+  .countdown div{
   float: left;
   padding: 10px;
   color: #000;
@@ -563,15 +575,15 @@ footer{
   height: 50px; 
   font-size: 20px;
 }
-.countdown p{
+  .countdown p{
     width: auto;
     font-weight: bolder;
     font-size: 30px;
 }
-.textConf{
+  .textConf{
   margin-top: 30px;
 }
-.card:hover .imgBox{
+  .card:hover .imgBox{
   transform:rotateY(-100deg)
 }
 }
