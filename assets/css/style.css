@@ -296,7 +296,7 @@ h3{
 
 /*Galeria de fotos*/
 .galery{
-    font-size: 50px;
+  font-size: 50px;
   margin: 5px auto;
   text-align: center;
   font-weight: 700;
@@ -494,23 +494,68 @@ footer{
       font-size: 35px !important;
   }
 @media(min-width: 320px) and (max-width: 650px){
-    .timer{
-        display: inline-block;
-        padding: 10px;
-        color: #000;
-        font-size: 20px;
-        position: absolute;
-        bottom: 0px;
-        left: 90px;
-        top: 600px;
-        text-align: center;
-      }
-      .countdown p{
-        width: auto;
-        font-weight: bolder;
-        font-size: 20px;
-    }
-    .cards{
-        height: 600px;
-    }
-    }
+  h1{
+    font-size: 40px;
+    font-weight: bold;
+    letter-spacing: 5px;
+    text-align: center;
+}
+p{
+  font-size: 20px;
+  text-align: center;
+}
+
+.names{
+  font-size: 40px;
+  
+}
+
+h2{
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.galery{
+  font-size: 40px;
+  margin: 5px auto;
+  text-align: center;
+  font-weight: 700;
+}
+.ceremony{
+  font-size: 40px;
+}
+.reception{
+  font-size: 40px;
+}
+.conf{
+  font-size: 35px;
+  margin-top: 30px;
+}
+.faltan{
+  margin: 10px auto 50px;
+}
+.timer{
+  display: inline-block;
+  padding: 50px;
+  color: #000;
+  font-size: 20px;
+  position: relative;
+  bottom: 30px;
+  text-align: center;
+  height: 100px;
+  margin-top: -500px;
+}
+.countdown div{
+  float: left;
+  padding: 10px;
+  color: #000;
+  font-weight: 500; 
+  height: 100px; 
+}
+.countdown p{
+    width: auto;
+    font-weight: bolder;
+    font-size: 30px !important;
+}
+}
