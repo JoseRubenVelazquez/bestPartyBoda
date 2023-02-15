@@ -1,20 +1,13 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Dancing Script', cursive;
+    font-family: 'Edwardian Script ITC', cursive;
+    list-style: none;
     box-sizing: border-box;
-    background-size: contain;
-    place-content: center;
-}
-
-body{
-    display: flex;
-    height: auto;
-    align-items: center;
-    justify-content: center;
     color: #000;
 }
 
+/*Principal container*/
 .fondo{
     background-image: url(../images/fondo.jpg);
     background-repeat: no-repeat;
@@ -29,7 +22,7 @@ body{
 }
 
 h1{
-    font-size: 40px;
+    font-size: 60px;
     font-weight: bold;
     letter-spacing: 5px;
     text-align: center;
@@ -43,22 +36,29 @@ h1{
 }
 
 p{
-  font-size: 28px;
+  font-size: 30px;
   text-align: center;
 }
 
 .names{
-  font-size: 70px;
+  font-size: 60px;
   
 }
 
 h2{
   text-align: center;
-  font-size: 30px;
+  font-size: 40px;
   font-weight: bold;
 }
+audio{
+  display: block;
+  margin: 0 auto 20px;
+}
+.pases{
+  font-size: 40px !important;
+}
 
-/*Seccion Acompañantes*/
+/*Papás Novia*/
 .acomp{
   display: block;
   width: 250px;
@@ -67,10 +67,11 @@ h2{
 }
 
 h3{
+  font-size: 35px !important;
   text-align: center;
 } 
 
-.card{
+.tarj{
   width:250px;
   height:300px;
   position:relative;
@@ -84,12 +85,12 @@ h3{
   transition:1s;
 }
 
-.card:hover{
+.tarj:hover{
   transform:translate(-50%,-50%) perspective(2000px) rotate(-10deg);  
   box-shadow:inset 20px 0 50px rgba(0,0,0,.5),0 10px 100px rgba(0,0,0,.5);
 }
 
-.card:before{
+.tarj:before{
   content:'';
   position:absolute;
   top:-5px;
@@ -101,7 +102,7 @@ h3{
   transform:skewX(-45deg)
 }
 
-.card:after{
+.tarj:after{
   content:'';
   position:absolute;
   top:0;
@@ -113,12 +114,12 @@ h3{
   transform:skewY(-45deg);
 }
 
-.card .imgBox img{
+.tarj .imgBox img{
   height:100%;
   width:100%;
 }
 
-.card .imgBox{
+.tarj .imgBox{
   width:100%;
   height:100%;
   position:relative;
@@ -126,11 +127,11 @@ h3{
   transition:1s cubic-bezier(.15,1.7,.84,.58);
 }
 
-.card:hover .imgBox{
+.tarj:hover .imgBox{
   transform:rotateY(-125deg)
 }
 
-.card .details{
+.tarj .details{
   position:absolute;
   top:0;
   left:0;
@@ -139,7 +140,7 @@ h3{
   padding:20px;
   z-index:-1;
 }
-.card .details h3{
+.tarj .details h3{
   font-size: 30px;
   font-weight: bold;
 }
@@ -159,7 +160,7 @@ h3{
 }
 
 
-/* Nombres papás */
+/*Padrinos */
 .papasNovio::after {
   width: 80%;
   height: 80%;
@@ -200,7 +201,9 @@ h3{
 }
 
 #papasNovio::after {
+  font-family: 'Edwardian Script ITC', cursive;;
   content: 'Paola & Diego';
+  font-size: 35px;
 }
 
 /*Padrinos*/
@@ -236,6 +239,7 @@ h3{
 }
 .snip1482 figcaption {
   position: absolute;
+  font-family: 'Edwardian Script ITC', cursive;
   width: 50%;
   top: 50%;
   left: 0;
@@ -244,6 +248,7 @@ h3{
   padding: 20px 0 20px 20px;
 }
 .snip1482 h3{
+  font-weight: bold;
   font-size: 35px;
 }
 .snip1482 h2,
@@ -274,7 +279,7 @@ h3{
 .snip1482:hover img,
 .snip1482.hover img {
   width: 55%;
-  height: 45%;
+  height: 50%;
   right: -10%;
 }
 .snip1482:hover figcaption h2,
@@ -285,9 +290,13 @@ h3{
   transform: translateX(0px);
   opacity: 1;
 }
+.inf{
+    font-size: 15px;
+}
 
 /*Galeria de fotos*/
-h1{
+.galery{
+    font-size: 50px;
   margin: 5px auto;
   text-align: center;
   font-weight: 700;
@@ -303,65 +312,86 @@ h1{
   height: 500px;  
 }
 
-/*Templo y terraza*/
+/*church and terrace*/
+.ceremony{
+    font-size: 50px;
+}
+.reception{
+    font-size: 50px;
+}
 .rows{
-  margin-top: -210px;
+    margin-top: -210px;
 }
 .cards{
-  height: 550px;
+    height: 550px;
 }
 .card-img-top{
-  height: 300px;
+    height: 300px;
 }
 h5{
-  font-size: 25px;
-  font-weight: bold;
+    font-size: 30px;
+    font-weight: 900;
 }
-.temp{
-  font-size: 20px;
-}
+/*.card-body p{
+    color: #000;
+}*/
 span{
-  font-weight: bold;
+    font-weight: 900;
 }
 .btn{
-  width: 200px;
-  height: 40px;
-  border: 2px solid;
-  border-color: #000;
-  border-radius: 10px;
-  letter-spacing: 1px;
-  font-weight: 700;
-  cursor: pointer;
-  font-size: 18px;
-  color: #000;
+    width: 200px;
+    height: 40px;
+    border: 2px solid;
+    border-color: #000;
+    border-radius: 10px;
+    line-height: 20px;
+    letter-spacing: 5px;
+    font-weight: 700;
+    cursor: pointer;
+    font-size: 25px;
+    color: #000;
 }
 .btn:hover{
-  cursor: pointer;
-  border-color: #000;
-  translate: 1px;
-  font-size: 20px;
-  color: #000;
+    cursor: pointer;
+    border-color: #000;
+    translate: 1px;
+    font-size: 28px;
+    color: #000;
 }
 .btns{
-  width: 200px;
-  height: 40px;
-  border: 2px solid;
-  border-color: gray;
-  border-radius: 10px;
-  background-color: gray;
-  letter-spacing: 1px;
-  font-weight: 700;
-  cursor: pointer;
-  font-size: 18px;
-  color: #000;
+    width: 200px;
+    height: 40px;
+    border: 2px solid;
+    border-color: gray;
+    border-radius: 10px;
+    background-color: gray;
+    letter-spacing: 1px;
+    font-weight: 700;
+    cursor: pointer;
+    font-size: 18px;
+    color: #000;
 }
 .btns:hover{
-  cursor: pointer;
-  background-color: #000;
-  border: #000;
+    cursor: pointer;
+    background-color: #000;
+    border: #000;
+}
+.modal-footer button{
+    font-size: 30px;
+    background-color: #fff;
+    border: 2px solid #000;
+}
+.modal-footer button:hover{
+    font-size: 30px;
+    background-color: #fff;
+    border: 2px solid #000;
+    color: red;
 }
 
 /*Confirmation*/
+.conf{
+    font-size: 50px;
+}
 .confirm{
   text-align: center;
   width: 300px;
@@ -374,131 +404,35 @@ span{
   color: #000;  
 }
 
-/*Boton Mapa*/
-  .btn{
-    width: 150px;
-    height: 40px;
-    border: 2px solid;
-    border-color: #000;
-    border-radius: 10px;
-    letter-spacing: 1px;
-    font-weight: 500;
-    cursor: pointer;
-    font-size: 20px;
-    color: #000;
-    margin-bottom: 10px;
-    font-weight: bold;
-}
-.btn:hover{
-    cursor: pointer;
-    border-color: #000;
-    transform: translateY(5px);
-    font-size: 20px;
-    color: #000;
-   
-}
-.whats{
-    height: 30px;
-}
-
-/*Confirmar evento*/
+/*Whatsap Button*/
 .confirm{
-  border: 2px solid #000;
-  border-radius: 10px;
-  width: 230px;
+    border: 2px solid #000;
+    border-radius: 10px;
+    width: 250px;
 }
 .button-whatsapp{
-  display: table;
-  text-decoration: none; 
-  font-size: 20px;
-  letter-spacing: 5px;
-  background: url(../images/whatsapp.png) no-repeat 40px center;background-size: 28px;
-  width: 300px;
-  height: 40px;   
+    display: table;
+    text-decoration: none; 
+    font-size: 30px;
+    letter-spacing: 5px;
+    background: url(../images/whatsapp.png) no-repeat 40px center;background-size: 28px;
+    width: 270px;
+    height: 40px;   
 }
 .button-whatsapp:hover{
-  text-decoration: none;
-  font-size: 22px;
-  transform: translateY(2px);
+    text-decoration: none;
+    font-size: 32px;
 }
 .container .button-whatsapp{
-  color: #000;
-  font-weight: 800;
-}
-.container:hover{
-  cursor: pointer;
-  transform: translateY(5px);
-}
-.confirm:hover{
-  cursor: pointer;
-  transform: translateY(5px);
-}
-
-/*Footer*/
-footer{
-  width: 100%;
-  height: 55px;
-  margin: auto auto 5px;
-  color: #000;
-}
-
-.footer{
-  text-align: center;
-  font-weight: 1000;
-  line-height: 25px;
-  letter-spacing: 3px;
-  font-size: 18px;
-}
-
-.phone{
-  text-align: center;
-  font-weight: 500;
-  line-height: 2px;
-  letter-spacing: 3px;
-  font-size: 20px;
-}
-
-.mensaje-final{
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 122px;
-  bottom: 0;
-  display: grid;
-  place-items: center;
-  transform: translateY(-250%);
-  transition: ease-in-out 0.5s;
-}
-
-/*Temporizador*/
-.timer{
-    display: inline-block;
-    padding: 50px;
     color: #000;
-    font-size: 20px;
-    position: relative;
-    bottom: 30px;
-    text-align: center;
-    height: 100px;
-  }
-.countdown div{
-    float: left;
-    padding: 10px;
-    color: #000;
-    font-weight: 500; 
-    height: 100px; 
-  }
-.countdown p{
-      width: auto;
-      font-weight: bolder;
-      font-size: 40px;
-  }
+    font-weight: 800;
+}
 
 /*Footer*/
 footer{
     width: 100%;
-    height: 55px;
-    margin: auto auto 5px;
+    height: 65px;
+    margin: 10px auto ;
     color: #000;
     border-top: 2px solid #000;
     border-bottom: 2px solid #000;
@@ -509,12 +443,13 @@ footer{
     font-weight: 1000;
     line-height: 25px;
     letter-spacing: 3px;
-    font-size: 18px;
+    font-size: 35px;
+    padding-top: 5px;
 }
 
 .phone{
     text-align: center;
-    font-weight: 500;
+    font-weight: 700;
     line-height: 2px;
     letter-spacing: 3px;
 }
@@ -530,60 +465,52 @@ footer{
     transform: translateY(-250%);
     transition: ease-in-out 0.5s;
 }
-.img-final{
-    height: 786px;
-    width: 1325px;
+.faltan{
+  margin-bottom: 90px;
 }
-/*responsive*/
-@media(min-width: 320px) and (max-width: 650px){
-  .card{
-    width: 200px;
-  }
 
-  h1{
-    font-size: 30px;
-  }
-  h2{
+/*Temporizador*/
+.timer{
+    display: inline-block;
+    padding: 50px;
+    color: #000;
     font-size: 20px;
+    position: relative;
+    bottom: 30px;
+    text-align: center;
+    height: 100px;
+    margin-top: 3690px;
   }
-  p{
-    font-size: 20px;
+.countdown div{
+    float: left;
+    padding: 10px;
+    color: #000;
+    font-weight: 500; 
+    height: 100px; 
   }
-  .faltan{
-    font-size: 30px;
+.countdown p{
+      width: auto;
+      font-weight: bolder;
+      font-size: 35px !important;
   }
-  .names{
-    font-size: 40px;
-  }
-  /*Temporizador*/
-  .timer{
-  display: inline-block;
-  padding: 50px;
-  color: #000;
-  font-size: 18px;
-  position: relative;
-  bottom: 30px;
-  text-align: center;
-  height: 100px;
-  margin-top: -30px;
-}
-  .countdown div{
-  float: left;
-  padding: 10px;
-  color: #000;
-  font-weight: 500; 
-  height: 50px; 
-  font-size: 20px;
-}
-  .countdown p{
-    width: auto;
-    font-weight: bolder;
-    font-size: 30px;
-}
-  .textConf{
-  margin-top: 30px;
-}
-  .card:hover .imgBox{
-  transform:rotateY(-105deg)
-}
-}
+@media(min-width: 320px) and (max-width: 650px){
+    .timer{
+        display: inline-block;
+        padding: 10px;
+        color: #000;
+        font-size: 20px;
+        position: absolute;
+        bottom: 0px;
+        left: 90px;
+        top: 600px;
+        text-align: center;
+      }
+      .countdown p{
+        width: auto;
+        font-weight: bolder;
+        font-size: 20px;
+    }
+    .cards{
+        height: 600px;
+    }
+    }

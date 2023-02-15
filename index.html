@@ -1,10 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Invitaciones digitales">
+    <meta name="keywords" content="HTML, CSS, JavaScript, quince, invitacion, fiesta, quinceaños, quince años, invitaciones, eventos, bautizos, bodas, despedida de solteras">
+    <meta name="author" content="Ruben Velazquez">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    
     <!--Google fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Lobster&display=swap" rel="stylesheet">
@@ -20,10 +24,11 @@
 
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body>
-    <div class="container fondo">
-        <div class="parte1">
-            <h1>¡¡¡NOS CASAMOS!!!</h1>
+  <div class="container">
+    <div class="parte1">
+            <h1>¡¡¡Nos Casamos!!!</h1>
         </div>
         <div>
           <img class="logo" src="assets/images/logo.gif" alt="">
@@ -35,11 +40,20 @@
         </div>
         <h1 class="names">Angela & Antonio</h1>
 
-        <p>Nos complace invitarte a que seas testigo de nuestra unión</p>
+        <p>Nos complace invitarte a que seas testigo de nuestra unión.</p>
+
+        <audio controls>
+          <source src="assets/audio/perfect.mp3" type="audio/mpeg">
+          <source src="assets/audio/perfect.ogv" type="audio/ogg">
+        </audio>
+
+        <h2>Válido por:</h2>
+        <h3 class="pases">2 Pases</h3>
+
 
         <!--Papás de la novia-->
         <h2>Papás de la Novia</h2>
-        <div class="card">
+        <div class="tarj">
           <div class="imgBox">
             <img class="acomp" src="assets/images/papasnovia.jpg" alt="">
           </div>
@@ -47,12 +61,14 @@
             <h3>Julieta & Lorenzo</h3>
           </div>
         </div>
+        <p class="inf">Toca la imagen</p>
 
         <!--Papás del novio-->
         <h2 class="nov">Papás del Novio</h2>
         <div id="wrapper">
           <div id="papasNovio" class="papasNovio"></div>
         </div>
+        <p class="inf">Toca la imagen</p>
 
         <!--Padrinos-->
         <h2 class="pad">Padrinos</h2>
@@ -63,9 +79,10 @@
           </figcaption>
           <!--<a href="#"></a>--><img src="assets/images/padrinos.jpg" alt="sample45" />
         </figure>
+        <p class="inf">Toca la imagen</p>
 
         <!--Galería de Fotos-->
-    <h1 id="galery">Galería de fotos</h1>
+    <h1 class="galery">Galería de fotos</h1>
     <div class="photos">
         <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
           <div class="carousel-inner">
@@ -101,17 +118,17 @@
         </div>
     </div>
 
-    <!--Templo y Terraza-->
+    <!--Church and Terrace grid-->
     <div class="map"></div>
     <div class="row rows row-cols-1 row-cols-md-2 g-4">
       <div class="col" id="map">
-        <h1 id="ceremony">Ceremonia Religiosa</h1>
-        <div class="tarjeta tarjetas">
-          <img src="assets/images/parroquia.jpg" class="card-img-top" alt="...">
+        <h1 class="ceremony">Ceremonia Religiosa</h1>
+        <div class="card cards">
+          <img src="assets/images/templo.jpg" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">Parroquia María Madre del Redentor</h5> 
-            <p class="temp"><span>Fecha:</span> 02 de Enero de 2022 18:00 hrs</p>
-            <p class="temp"><span>Domicilio:</span> Av. El Colli Esq. Jacarandas 1095-A, Paraisos del Colli, Zapopan, Jalisco</p>
+            <p><span>Fecha:</span> 02 de Enero de 2023 18:00 hrs</p>
+            <p><span>Domicilio:</span> Av. Hidalgo 75, Zapopan, 45100 Zapopan, Jal.</p>
           
             <!-- Button trigger modal -->
             <button type="button" class="btn d-block mx-auto" data-bs-toggle="modal" data-bs-target="#exampleModal">Mapa</button>
@@ -125,7 +142,7 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                   </div>
                   <div class="modal-body">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3733.5035803994656!2d-103.45558858580476!3d20.649081706008722!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8428abf8fa776f5d%3A0x3b0e067e2939f9f0!2sParroquia%20Mar%C3%ADa%20Madre%20del%20Redentor!5e0!3m2!1ses-419!2smx!4v1675370081367!5m2!1ses-419!2smx" width="100%" height="410" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3731.7111869241203!2d-103.39302198580346!3d20.721949403558863!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8428afba8af89fa3%3A0x260695514ed8e65a!2sParroquia%20de%20San%20Pedro%20Ap%C3%B3stol%2C%20Zapopan!5e0!3m2!1ses-419!2smx!4v1676420415652!5m2!1ses-419!2smx" width="100%" height="410" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                   </div>
                   <div class="modal-footer">
                     <button type="button" class="btns btn-primary" data-bs-dismiss="modal">Cerrar</button>
@@ -138,13 +155,13 @@
       </div>
 
       <div class="col cols" id="maps">
-        <h1 id="reception">Recepción</h1>
-        <div class="tarjeta tarjetas">
-          <img src="assets/images/terraza.jpg" class="card-img-top" alt="...">
+        <h1 class="reception">Recepción</h1>
+        <div class="card cards">
+          <img src="assets/images/salon.jpg" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">Salón de Eventos</h5>
-            <p class="temp"><span>Fecha:</span> 02 de Enero de 2022 20:00 hrs</p>
-          <p class="temp"><span>Domicilio:</span> Del Sol 76 Esq. Volcán Quinceo, Paraisos del Colli, Zapopan, Jalisco</p>
+            <p><span>Fecha:</span> 02 de Enero de 2023 20:00 hrs</p>
+          <p><span>Domicilio:</span> C. Puerto Yavaros, Miramar, 45060 Zapopan, Jal.</p>
 
           <!-- Button trigger modal -->
           <button type="button" class="btn d-block mx-auto" data-bs-toggle="modal" data-bs-target="#exampleModals">Mapa</button>
@@ -158,7 +175,7 @@
                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3733.6033980271195!2d-103.44716388580495!3d20.645016506145065!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8428ac0f4a2795fd%3A0x501f4ad79cc5f83e!2sSol%2076%2C%20Para%C3%ADsos%20del%20Colli%2C%2045069%20Zapopan%2C%20Jal.!5e0!3m2!1ses-419!2smx!4v1675369950393!5m2!1ses-419!2smx" width="100%" height="410" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3733.8075344403564!2d-103.44339638580497!3d20.636700406424175!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8428ac0d1369f667%3A0x815816c0861e99f!2sEmporio%20Sal%C3%B3n%20De%20Eventos!5e0!3m2!1ses-419!2smx!4v1676420545566!5m2!1ses-419!2smx" width="100%" height="410" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
                 <div class="modal-footer">
                   <button type="button" class="btns btn-primary" data-bs-dismiss="modal">Cerrar</button>
@@ -195,24 +212,23 @@
     </div>
 
     <!--Confirmation--> 
-    <h1 class="textConf">Confirmar Asistencia</h1>
+    <h1 class="conf">Confirmar Asistencia</h1>
     <div class="confirm" id="confirmation">
       <a href="https://api.whatsapp.com/send?phone=523310417653&text=Hola%2C+Confirmo+mi+asistencia.+Gracias.%21%21%21" class="button-whatsapp">Confirmar</a>
     </div>
-      
+
+    <!--Footer-->  
     <footer>
-      <p class="footer">CONTACTO</p>
+      <p class="footer">Contacto</p>
       <p class="phone">33 10 41 76 53</p>
     </footer>
+      
+  
 
+  
     
-
-
-
     
-
-
-    <!--JavaScript-->
+     <!--JavaScript-->
      <!--Bootstrap 4-->  
      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
@@ -226,5 +242,6 @@
      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
      <script src="assets/js/index.js"></script>
       
+  </div>
 </body>
 </html>
