@@ -569,26 +569,28 @@ footer{
   .pase img{
     display: block;
     margin: auto;
-    width: 200px;
-    height: 150px;
+    width: 200px !important;
+    height: 150px !important;
   }
   .pases{
     font-size: 30px !important;
   }
   /*Dress code*/
   .dresscode{
-    font-size: 40px;
-    margin-bottom: -5px;
+    font-size: 40px !important;
+    margin-bottom: -5px !important;
   }
   .woman img{
-    /*display: block;
-    margin: auto;*/
-    height: 100px;
+    display: block;
+    margin: auto;
+    width: 50px !important;
+    height: 100px !important;
   }
   .man img{
-    /*display: block;
-    margin: auto;*/
-    height: 100px;
+    display: block;
+    margin: auto;
+    width: 150px !important;
+    height: 100px !important;
   }
   
   .faltan{
