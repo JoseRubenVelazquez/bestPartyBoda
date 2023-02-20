@@ -322,7 +322,7 @@ h3{
     margin-top: -210px;
 }
 .cards{
-    height: 550px;
+    height: auto;
 }
 .card-img-top{
     height: 300px;
@@ -382,9 +382,26 @@ span{
     color: red;
 }
 
+/*Dress code*/
+.dresscode{
+  font-size: 50px;
+  margin-top: 20px;
+}
+.woman img{
+  display: block;
+  margin: auto;
+  height: 200px;
+}
+.man img{
+  display: block;
+  margin: auto;
+  height: 200px;
+}
+
 /*Confirmation*/
 .conf{
     font-size: 50px;
+    margin-top: 50px;
 }
 .confirm{
   text-align: center;
@@ -457,27 +474,32 @@ footer{
     transition: ease-in-out 0.5s;
 }
 .faltan{
-  margin-bottom: 90px;
+  margin: 20px auto 0;
+}
+.pase img{
+  display: block;
+  margin: auto;
+  width: 300px;
+  height: 250px;
+}
+.valido{
+  margin-top: -170px;
 }
 
 /*Temporizador*/
 .timer{
     display: inline-block;
-    padding: 50px;
     color: #000;
     font-size: 20px;
     position: relative;
+    margin:  auto;
     bottom: 30px;
-    text-align: center;
-    height: 100px;
-    margin-top: 3690px;
   }
 .countdown div{
     float: left;
-    padding: 10px;
+    padding: 0 10px;
     color: #000;
     font-weight: 500; 
-    height: 100px; 
   }
 .countdown p{
       width: auto;
@@ -489,31 +511,30 @@ footer{
     font-family: 'Edwardian Script ITC', cursive !important;
   }
   h1{
-    font-family: 'Edwardian Script ITC', cursive;
+    font-family: 'Edwardian Script ITC', cursive !important;
     font-size: 40px;
     font-weight: bold;
-    letter-spacing: 5px;
     text-align: center;
   }
   .img-fluid{
     display: block;
     width: auto;
-    height: 450px;
+    height: 550px;
     margin: 10px auto;
   }
   p{
-    font-family: 'Edwardian Script ITC', cursive;
+    font-family: 'Edwardian Script ITC', cursive !important;
     font-size: 20px;
     text-align: center;
   }
 
   .names{
     font-size: 40px;
-    font-family: 'Edwardian Script ITC', cursive;
+    font-family: 'Edwardian Script ITC', cursive !important;
   }
 
   h2{
-    font-family: 'Edwardian Script ITC', cursive;
+    font-family: 'Edwardian Script ITC', cursive !important;
     text-align: center;
     font-size: 30px;
     font-weight: bold;
@@ -526,28 +547,50 @@ footer{
     font-weight: 700;
   }
   .ceremony{
-    font-family: 'Edwardian Script ITC', cursive;
+    font-family: 'Edwardian Script ITC', cursive !important;
     font-size: 35px;
   }
   .reception{
-    font-family: 'Edwardian Script ITC', cursive;
+    font-family: 'Edwardian Script ITC', cursive !important;
     font-size: 40px;
   }
   .card-title{
-    font-family: 'Edwardian Script ITC', cursive;
+    font-family: 'Edwardian Script ITC', cursive !important;
     font-size: 22px !important;
   }
   .conf{
-    font-family: 'Edwardian Script ITC', cursive;
+    font-family: 'Edwardian Script ITC', cursive !important;
     font-size: 35px;
-    margin-top: -1px;
+    margin-top: 20px;
   }
   .valido{
-    margin-top: 15px;
+    margin-top: -110px;
+  }
+  .pase img{
+    display: block;
+    margin: auto;
+    width: 200px;
+    height: 150px;
   }
   .pases{
     font-size: 30px !important;
   }
+  /*Dress code*/
+  .dresscode{
+    font-size: 40px;
+    margin-bottom: -5px;
+  }
+  .woman img{
+    /*display: block;
+    margin: auto;*/
+    height: 100px;
+  }
+  .man img{
+    /*display: block;
+    margin: auto;*/
+    height: 100px;
+  }
+  
   .faltan{
     margin: 10px auto 50px;
   }
@@ -571,14 +614,13 @@ footer{
   }
   .countdown p{
       width: auto;
-      font-weight: bolder;
+      font-weight: bold;
       font-size: 30px !important;
       margin-bottom: -1px !important;
   }
   .footer{
     text-align: center;
     line-height: 25px;
-    letter-spacing: 3px;
     font-size: 25px;
     padding-top: 5px;
   }
@@ -612,7 +654,7 @@ footer{
     transform:rotateY(-105deg)
   }
   .tarj .details h3{
-    font-family: 'Edwardian Script ITC', cursive;
+    font-family: 'Edwardian Script ITC', cursive !important;
     font-size: 27px !important;
     font-weight: bold;
   }
