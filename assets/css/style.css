@@ -373,12 +373,14 @@ span{
 .modal-footer button{
     font-size: 30px;
     background-color: #fff;
+    line-height: 0;
     border: 2px solid #000;
 }
 .modal-footer button:hover{
     font-size: 30px;
     background-color: #fff;
-    border: 2px solid #000;
+    line-height: 0;
+    border: 2px solid red;
     color: red;
 }
 
@@ -511,7 +513,6 @@ footer{
     font-family: 'Edwardian Script ITC', cursive !important;
   }
   h1{
-    font-family: 'Edwardian Script ITC', cursive !important;
     font-size: 40px;
     font-weight: bold;
     text-align: center;
@@ -523,18 +524,15 @@ footer{
     margin: 10px auto;
   }
   p{
-    font-family: 'Edwardian Script ITC', cursive !important;
     font-size: 20px;
     text-align: center;
   }
 
   .names{
     font-size: 40px;
-    font-family: 'Edwardian Script ITC', cursive !important;
   }
 
   h2{
-    font-family: 'Edwardian Script ITC', cursive !important;
     text-align: center;
     font-size: 30px;
     font-weight: bold;
@@ -547,19 +545,15 @@ footer{
     font-weight: 700;
   }
   .ceremony{
-    font-family: 'Edwardian Script ITC', cursive !important;
     font-size: 35px;
   }
   .reception{
-    font-family: 'Edwardian Script ITC', cursive !important;
     font-size: 40px;
   }
   .card-title{
-    font-family: 'Edwardian Script ITC', cursive !important;
     font-size: 22px !important;
   }
   .conf{
-    font-family: 'Edwardian Script ITC', cursive !important;
     font-size: 35px;
     margin-top: 20px;
   }
@@ -656,7 +650,6 @@ footer{
     transform:rotateY(-105deg)
   }
   .tarj .details h3{
-    font-family: 'Edwardian Script ITC', cursive !important;
     font-size: 27px !important;
     font-weight: bold;
   }
@@ -677,12 +670,22 @@ footer{
     border-color: #000;
     translate: 1px;
     font-size: 22px;
-    color: #000;
+    color:
+     #000;
 }
-  .modal-footer button:hover{
-    font-size: 28px !important;
+.modal-footer button{
+  font-size: 28px;
+  background-color: #fff;
+  line-height: 0;
+  width: 130px;
+  border: 2px solid #000;
+}
+.modal-footer button:hover{
+    font-size: 26px !important;
     background-color: #fff;
-    border: 2px solid #000;
+    width: 130px;
+    line-height: 4px;
+    border: 2px solid red;
     color: red;
 }
 .confirm{
