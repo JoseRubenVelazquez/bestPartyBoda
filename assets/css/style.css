@@ -698,7 +698,7 @@ footer{
   text-decoration: none; 
   font-size: 25px;
   background: url(../images/whatsapp.png) no-repeat 40px center;background-size: 28px;
-  width: 250px !important;
+  width: 240px !important;
   height: 40px;   
 }
 .button-whatsapp:hover{
